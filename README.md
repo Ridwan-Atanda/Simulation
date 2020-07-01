@@ -1,2 +1,8 @@
 # Simulation
 Modelling, Simulation and Optimization
+# Simulation
+Modelling, Simulation and Optimization
+
+We first set up a simulation of the Train Network for optimal 'n' trains per hour with 'k' no signal blocks, taking into account the number of passengers per hour and the signal blocks of the rail lines in order to achieve optimum simulation performance. Signal blocks are designed to avoid collisions and delay between the movements of the Trains using Simpy Resource.
+The simulation result is integrated into the Monte Carlo optimization to minimize the total travel time of the Trains and to optimize the number of passengers boarding the Train at any given time. Using Poisson Distribution, we predicted that a number of passengers will arrive at the train at a given hour, the average boarding time for each passenger was believed to be 3 seconds, because it is not possible for everyone to get on board due to a tight schedule at each station. Also, passengers who are not at a stop before the arrival of the train do not get on board. More precisely, we assumed that the total number of potential passengers at each stop at any given time was 100, so the process is specified for the pick-up of passengers arriving at the station prior to the arrival of the train.
+We used the MonteCarlo Optimization method to get the optimal travel time and number of passengers for the simulation proposed. The results show that the total average travel time is 4088.99 seconds with 10 trains and 12 signal blocks, including a maximum throughput of 300 passengers an hour with 9 trains and 10 signal blocks.
